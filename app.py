@@ -1,37 +1,40 @@
 import streamlit as st
+
 st.title("Тест")
+
+# Въпрос 1
 st.write("Коя е столицата на България?")
-user_answer1 = st.text_input("Вашият отговор:")
-if st.button("Провери отговора"):
-    correct_answer1 = "София"
-    if user_answer.strip().lower() == correct_answer1.lower():
+user_answer1 = st.text_input("Вашият отговор:", key="q1")
+if st.button("Провери отговор 1"):
+    if user_answer1.strip().lower() == "софия":
         st.success("Верен отговор!")
     else:
         st.error("Грешен отговор")
 
+# Въпрос 2
 st.write("Кога е създадена България?")
-user_answer2 = st.text_input("Вашият отговор:")
-if st.button("Провери отговора"):
-    correct_answer2 = "681"
-    if user_answer2.strip().lower() == correct_answer2.lower():
+user_answer2 = st.text_input("Вашият отговор:", key="q2")
+if st.button("Провери отговор 2"):
+    if user_answer2.strip() == "681":
         st.success("Верен отговор!")
     else:
         st.error("Грешен отговор")
 
-st.write("Къде се намира айфеловата кула")
-user_answer3 = st.text_input("Вашият отговор:")
-if st.button("Провери отговора"):
-    correct_answer3 = "Париж"
-    if user_answer3.strip().lower() == correct_answer3.lower():
+# Въпрос 3
+st.write("Къде се намира Айфеловата кула?")
+user_answer3 = st.text_input("Вашият отговор:", key="q3")
+if st.button("Провери отговор 3"):
+    if user_answer3.strip().lower() == "париж":
         st.success("Верен отговор!")
     else:
         st.error("Грешен отговор")
 
-st.write("Коя година е започнал 1 световна война")
-user_answer4 = st.text_input("Вашият отговор:")
-if st.button("Провери отговора"):
-    correct_answer4 = "София"
-    if user_answer4.strip().lower() == correct_answer4.lower():
+# Въпрос 4
+st.write("Коя година е започнала Първата световна война?")
+user_answer4 = st.text_input("Вашият отговор:", key="q4")
+if st.button("Провери отговор 4"):
+    if user_answer4.strip() == "1914":
         st.success("Верен отговор!")
     else:
         st.error("Грешен отговор")
+
