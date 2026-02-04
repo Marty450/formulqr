@@ -13,7 +13,7 @@ if st.button("Провери отговор 1"):
 
 # Въпрос 2
 st.write("Кога е създадена България?")
-user_answer2 = st.number_input("Вашият отговор:", key="q2")
+user_answer2 = st.text_input("Вашият отговор:", key="q2")
 if st.button("Провери отговор 2"):
     if user_answer2.strip() == "681":
         st.success("Верен отговор!")
@@ -31,7 +31,7 @@ if st.button("Провери отговор 3"):
 
 # Въпрос 4
 st.write("Коя година е започнала Първата световна война?")
-user_answer4 = st.number_input("Вашият отговор:", key="q4")
+user_answer4 = st.text_input("Вашият отговор:", key="q4")
 if st.button("Провери отговор 4"):
     if user_answer4.strip() == "1914":
         st.success("Верен отговор!")
